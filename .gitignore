@@ -1,0 +1,6 @@
+/bin/
+/tmp/
+/dist/
+/node_modules/
+/.parcel-cache/
+.DS_Store

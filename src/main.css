@@ -1,0 +1,12 @@
+#app {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #f9f2e4;
+}
+
+.card {
+  border-color: #eae2cf;
+}
+.card-footer {
+  background-color: #eae2cf;
+}
