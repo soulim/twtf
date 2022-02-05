@@ -19,7 +19,7 @@ all: | $(PUB_DIR)
 	npm run build
 
 .PHONY: deploy
-deploy: all | $(TMP_DIR)
+deploy: clean all | $(TMP_DIR)
 	zip --test \
         --recurse-paths \
         --exclude "*.DS_Store" \
