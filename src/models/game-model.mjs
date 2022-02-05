@@ -9,7 +9,7 @@ const level = {
       "title": "Fetzenfish",
       "description": "Zu welcher Familie zählen die Fetzenfishe und die Seepferdchen?",
       "image": {
-        "url": new URL("data/images/fetzenfish.jpg?as=webp&width=600", import.meta.url)
+        "url": new URL("../data/images/fetzenfish.jpg?as=webp&width=600", import.meta.url)
       },
       "options": [
         {
@@ -32,7 +32,7 @@ const level = {
       "title": "Küstenseeschwalbe",
       "description": "Wo brütet seine Eier die Küstenseeschwalbe?",
       "image": {
-        "url": new URL("data/images/kuestenseenschwalbe.jpg?as=webp&width=600", import.meta.url),
+        "url": new URL("../data/images/kuestenseenschwalbe.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
       },
       "options": [
@@ -56,7 +56,7 @@ const level = {
       "title": "Rosaflamingo",
       "description": "Was fressen Rosaflamingos am liebsten?",
       "image": {
-        "url": new URL("data/images/rosaflamingo.jpg?as=webp&width=600", import.meta.url),
+        "url": new URL("../data/images/rosaflamingo.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
       },
       "options": [
@@ -80,7 +80,7 @@ const level = {
       "title": "Haubentaucher",
       "description": "Wofür ist der Haubentaucher bekannt?",
       "image": {
-        "url": new URL("data/images/haubentaucher.jpg?as=webp&width=600", import.meta.url),
+        "url": new URL("../data/images/haubentaucher.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
       },
       "options": [
@@ -104,7 +104,7 @@ const level = {
       "title": "Fetzenfish",
       "description": "Wie zeigt das Fetzenfish-Männchen, das es zum Ausbrüten der Eier bereit ist?",
       "image": {
-        "url": new URL("data/images/fetzenfish.jpg?as=webp&width=600", import.meta.url)
+        "url": new URL("../data/images/fetzenfish.jpg?as=webp&width=600", import.meta.url)
       },
       "options": [
         {
@@ -127,7 +127,7 @@ const level = {
       "title": "Prachtfregattvogel",
       "description": "Wann bläst ein Prachtfregattvogel-Männchen seinen roten Kehlsack auf?",
       "image": {
-        "url": new URL("data/images/prachtfregattvogel.jpg?as=webp&width=600", import.meta.url),
+        "url": new URL("../data/images/prachtfregattvogel.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
       },
       "options": [
@@ -151,7 +151,7 @@ const level = {
       "title": "Blattschwanzgecko",
       "description": "Wo findet man Blattschwanzgeckos?",
       "image": {
-        "url": new URL("data/images/blattschwanzgecko.jpg?as=webp&width=600", import.meta.url),
+        "url": new URL("../data/images/blattschwanzgecko.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
       },
       "options": [

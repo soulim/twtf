@@ -1,6 +1,6 @@
-import ScoreViewController from './score-viewcontroller.mjs';
-import ScoreViewModel from './score-viewmodel.mjs';
-import ScoreModel from './score-model.mjs';
+import ScoreViewController from '../controllers/score-viewcontroller.mjs';
+import ScoreViewModel from '../viewmodels/score-viewmodel.mjs';
+import ScoreModel from '../models/score-model.mjs';
 
 class ScoreCoordinator {
   #delegate

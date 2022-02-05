@@ -1,6 +1,6 @@
-import GameViewController from "./game-viewcontroller.mjs";
-import GameViewModel from "./game-viewmodel.mjs";
-import GameModel from "./game-model.mjs";
+import GameViewController from "../controllers/game-viewcontroller.mjs";
+import GameViewModel from "../viewmodels/game-viewmodel.mjs";
+import GameModel from "../models/game-model.mjs";
 
 class GameCoordinator {
   #delegate

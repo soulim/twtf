@@ -1,4 +1,4 @@
-import AppCoordinator from './app-coordinator.mjs';
+import AppCoordinator from './coordinators/app-coordinator.mjs';
 
 window.addEventListener('load', function () {
   console.debug('window.addEventListener() load');

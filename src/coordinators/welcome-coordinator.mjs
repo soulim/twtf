@@ -1,6 +1,6 @@
-import WelcomeViewController from './welcome-viewcontroller.mjs';
-import WelcomeViewModel from './welcome-viewmodel.mjs';
-import WelcomeModel from './welcome-model.mjs';
+import WelcomeViewController from '../controllers/welcome-viewcontroller.mjs';
+import WelcomeViewModel from '../viewmodels/welcome-viewmodel.mjs';
+import WelcomeModel from '../models/welcome-model.mjs';
 
 class WelcomeCoordinator {
   #delegate
