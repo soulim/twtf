@@ -1,0 +1,80 @@
+/*
+  # Block Google's FloC.
+  # TODO: Add a link on documentation.
+  Permissions-Policy: interest-cohort=()
+
+  # Instruct browsers to access the website only using HTTPS.
+  # See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+  # Instruct browsers to follow MIME-types advertised in the Content-Type
+  # headers.
+  # See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
+  X-Content-Type-Options: nosniff
+
+  # Instruct browsers to stop loading pages when they detect XSS-attacks.
+  # See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
+  X-XSS-Protection: 1; mode=block
+
+  # Disallow to frame the website.
+  # See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+  X-Frame-Options: DENY
+
+  # Content Security Policy: load content only from 'self' except YouTube and
+  # Plausible.
+  # See https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+  Content-Security-Policy: default-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' https://plausible.io; font-src 'self'; frame-src 'self' https://www.youtube-nocookie.com; img-src 'self' data:; manifest-src 'self'; media-src 'self'; object-src 'none'; script-src 'self' https://plausible.io; style-src 'self' 'unsafe-inline'; frame-ancestors 'none'
+
+  # Instruct browsers to send the origin (only) when the protocol security
+  # level stays the same (HTTPS -> HTTPS).
+  # See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+  Referrer-Policy: strict-origin
+
+  # Feature policy.
+  # https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy
+  Feature-Policy: geolocation 'self'
+
+  # Clients can cache a resource but must revalidate each time before using it.
+  # This means HTTP request occurs each time though, it can skip downloading
+  # HTTP body if the content is valid.
+  # See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
+  Cache-Control: public
+  Cache-Control: max-age=0
+  Cache-Control: must-revalidate
+
+# Allow clients to cache all immutable content and do not revalidate it.
+/*.js
+  Cache-Control: public
+  Cache-Control: max-age=31536000
+  Cache-Control: s-maxage=31536000
+  Cache-Control: immutable
+/*.css
+  Cache-Control: public
+  Cache-Control: max-age=31536000
+  Cache-Control: s-maxage=31536000
+  Cache-Control: immutable
+/*.woff2
+  Cache-Control: public
+  Cache-Control: max-age=31536000
+  Cache-Control: s-maxage=31536000
+  Cache-Control: immutable
+/*.png
+  Cache-Control: public
+  Cache-Control: max-age=31536000
+  Cache-Control: s-maxage=31536000
+  Cache-Control: immutable
+/*.jpg
+  Cache-Control: public
+  Cache-Control: max-age=31536000
+  Cache-Control: s-maxage=31536000
+  Cache-Control: immutable
+/*.ico
+  Cache-Control: public
+  Cache-Control: max-age=31536000
+  Cache-Control: s-maxage=31536000
+  Cache-Control: immutable
+/*.webp
+  Cache-Control: public
+  Cache-Control: max-age=31536000
+  Cache-Control: s-maxage=31536000
+  Cache-Control: immutable

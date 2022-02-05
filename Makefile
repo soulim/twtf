@@ -1,6 +1,7 @@
 BIN_DIR = ./bin
 TMP_DIR = ./tmp
 PUB_DIR = ./dist
+SRC_DIR = ./src
 
 NETLIFY_WEBSITE =
 NETLIFY_ACCESS_TOKEN =
@@ -20,6 +21,7 @@ all: | $(PUB_DIR)
 
 .PHONY: deploy
 deploy: clean all | $(TMP_DIR)
+	cp $(SRC_DIR)/_headers $(PUB_DIR)
 	zip --test \
         --recurse-paths \
         --exclude "*.DS_Store" \
