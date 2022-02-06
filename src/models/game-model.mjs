@@ -56,7 +56,7 @@ const level = {
         }
       ],
       "answer": "A"
-    },    
+    },
     {
       "id": "card-3",
       "title": "Rosaflamingo",
@@ -110,7 +110,7 @@ const level = {
         }
       ],
       "answer": "A"
-    },    
+    },
     {
       "id": "card-5",
       "title": "Fetzenfish",
@@ -136,7 +136,7 @@ const level = {
         }
       ],
       "answer": "B"
-    },    
+    },
     {
       "id": "card-6",
       "title": "Prachtfregattvogel",
@@ -163,7 +163,7 @@ const level = {
         }
       ],
       "answer": "C"
-    },    
+    },
     {
       "id": "card-7",
       "title": "Blattschwanzgecko",
@@ -205,24 +205,29 @@ class GameModel {
   #currentCardIndex = 0;
 
   #storage;
+  #deck;
+
+  static deckSize = 5;
 
   constructor() {
     console.debug("GameModel.constructor()");
-    console.debug(level);
 
     this.#storage = window.localStorage;
+    // Pick N random cards from all cards available.
+    this.#deck = this.#shuffle(level.cards.slice())
+                     .slice(0, GameModel.deckSize);
   }
 
   card(callback) {
-    let card = level.cards[this.#currentCardIndex];
+    let card = this.#deck[this.#currentCardIndex];
     callback(card);
   }
-  
+
   processAnswer(answer, callback) {
     console.debug("GameModel.processAnswer()" );
     console.debug(answer);
 
-    let currentCard = level.cards[this.#currentCardIndex];
+    let currentCard = this.#deck[this.#currentCardIndex];
     console.debug(this.#currentCardIndex);
     console.debug(currentCard);
 
@@ -240,9 +245,19 @@ class GameModel {
 
     this.#currentCardIndex += 1;
 
-    let nextCard = level.cards[this.#currentCardIndex];
+    let nextCard = this.#deck[this.#currentCardIndex];
 
     callback(answer, nextCard);
+  }
+
+  // See https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
+  #shuffle(cards) {
+    for (let i = cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+
+    return cards;
   }
 }
 
