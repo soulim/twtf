@@ -11,6 +11,9 @@ const level = {
       "image": {
         "url": new URL("../data/images/fetzenfish.jpg?as=webp&width=600", import.meta.url)
       },
+      "audio": {
+        "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
+      },
       "options": [
         {
           "id": "A",
@@ -34,6 +37,9 @@ const level = {
       "image": {
         "url": new URL("../data/images/kuestenseenschwalbe.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
+      },
+      "audio": {
+        "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
       },
       "options": [
         {
@@ -59,6 +65,9 @@ const level = {
         "url": new URL("../data/images/rosaflamingo.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
       },
+      "audio": {
+        "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
+      },
       "options": [
         {
           "id": "A",
@@ -83,6 +92,9 @@ const level = {
         "url": new URL("../data/images/haubentaucher.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
       },
+      "audio": {
+        "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
+      },
       "options": [
         {
           "id": "A",
@@ -105,6 +117,9 @@ const level = {
       "description": "Wie zeigt das Fetzenfish-Männchen, das es zum Ausbrüten der Eier bereit ist?",
       "image": {
         "url": new URL("../data/images/fetzenfish.jpg?as=webp&width=600", import.meta.url)
+      },
+      "audio": {
+        "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
       },
       "options": [
         {
@@ -130,6 +145,9 @@ const level = {
         "url": new URL("../data/images/prachtfregattvogel.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
       },
+      "audio": {
+        "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
+      },
       "options": [
         {
           "id": "A",
@@ -153,6 +171,9 @@ const level = {
       "image": {
         "url": new URL("../data/images/blattschwanzgecko.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
+      },
+      "audio": {
+        "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
       },
       "options": [
         {
