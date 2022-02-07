@@ -69,7 +69,7 @@ class GameViewController {
     console.debug("GameViewController.renderCard()");
 
     this.#displayImage(card.image.url);
-    this.#displayAudio(card.audio.url);
+    // this.#displayAudio(card.audio.url);
     this.#displayTitle(card.title);
     this.#displayDesciption(card.description);
     this.#displayOptions(card.options);
