@@ -190,6 +190,109 @@ const level = {
         }
       ],
       "answer": "B"
+    },
+    {
+      "id": "card-8",
+      "title": "Diamantschildkröte",
+      "description": "Wieso heißt die Diamantschildkröte \"Diamantschildkröte\"?",
+      "image": {
+        "url": new URL("../data/images/diamantschildkroete.jpg?as=webp&width=600", import.meta.url),
+        "source": "http://www.dght-dresden.de"
+      },
+      "audio": {
+        "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Weil sie Diamanten auf der Haut hat"
+        },
+        {
+          "id": "B",
+          "title": "Weil sie ein Diamanten-Muster auf ihrer Haut hat"
+        }      ],
+      "answer": "B"
+    },
+    {
+      "id": "card-9",
+      "title": "Faueltier",
+      "description": "Warum hat das Faultier so lange Kralen?",
+      "image": {
+        "url": new URL("../data/images/faultier.jpg?as=webp&width=600", import.meta.url),
+        "source": "https://youtube.com"
+      },
+      "audio": {
+        "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Weil es sich dann besser an den Bäumen festkrallen kann"
+        },
+        {
+          "id": "B",
+          "title": "Weil es sich dann besser verteidigen kann"
+        },
+        {
+          "id": "C",
+          "title": "Weil es dann zeigen kann, dass es in Ruhe gelassen sein will"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "card-10",
+      "title": "Faueltier",
+      "description": "Warum ist das Faultier so langsam?",
+      "image": {
+        "url": new URL("../data/images/faultier.jpg?as=webp&width=600", import.meta.url),
+        "source": "https://youtube.com"
+      },
+      "audio": {
+        "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Weil es faul ist"
+        },
+        {
+          "id": "B",
+          "title": "Weil es nicht schnell sein will"
+        },
+        {
+          "id": "C",
+          "title": "Weil das Futter nicht viel Energie liefert"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "card-11",
+      "title": "Känguru",
+      "description": "Haben auch die männlichen Kängurus einen Beutel?",
+      "image": {
+        "url": new URL("../data/images/kaenguru-02.jpg?as=webp&width=600", import.meta.url),
+        "source": "https://www.wunschliste.de"
+      },
+      "audio": {
+        "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Ja"
+        },
+        {
+          "id": "B",
+          "title": "Nein"
+        },
+        {
+          "id": "C",
+          "title": "Die Forscher wissen es noch nicht"
+        }
+      ],
+      "answer": "B"
     }
   ]
 };
