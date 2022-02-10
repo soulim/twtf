@@ -297,60 +297,30 @@ const level = {
   ]
 };
 
-class GameModel {
-  #stats = {
-    cards: 0,
-    answers: {
-      correct: 0,
-      wrong: 0
-    }
-  };
-  #currentCardIndex = 0;
+class Deck {
+  #cards = [];
+  #index = 0;
 
-  #storage;
-  #deck;
+  #size = 0;
 
-  static deckSize = 5;
-
-  constructor() {
-    console.debug("GameModel.constructor()");
-
-    this.#storage = window.localStorage;
-    // Pick N random cards from all cards available.
-    this.#deck = this.#shuffle(level.cards.slice())
-                     .slice(0, GameModel.deckSize);
+  constructor(size) {
+    this.#size = size;
+    this.#cards = this.#shuffle(level.cards.slice())
+                      .slice(0, size);
   }
 
-  card(callback) {
-    let card = this.#deck[this.#currentCardIndex];
-    callback(card);
+  current() {
+    return this.#cards[this.#index];
   }
 
-  processAnswer(answer, callback) {
-    console.debug("GameModel.processAnswer()" );
-    console.debug(answer);
-
-    let currentCard = this.#deck[this.#currentCardIndex];
-    console.debug(this.#currentCardIndex);
-    console.debug(currentCard);
-
-    this.#stats.cards += 1;
-
-    if (answer === currentCard.answer) {
-      this.#stats.answers.correct += 1;
-    } else {
-      this.#stats.answers.wrong += 1;
+  next() {
+    if (this.#index >= (this.#size - 1)) {
+      return null;
     }
 
-    this.#storage.setItem("stats.cards", this.#stats.cards);
-    this.#storage.setItem("stats.answers.correct", this.#stats.answers.correct);
-    this.#storage.setItem("stats.answers.wrong", this.#stats.answers.wrong);
+    this.#index += 1;
 
-    this.#currentCardIndex += 1;
-
-    let nextCard = this.#deck[this.#currentCardIndex];
-
-    callback(answer, nextCard);
+    return this.#cards[this.#index];
   }
 
   // See https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
@@ -362,6 +332,54 @@ class GameModel {
 
     return cards;
   }
+
+}
+
+class GameModel {
+  #stats = {
+    cards: 0,
+    answers: {
+      correct: 0,
+      wrong: 0
+    }
+  };
+
+  #storage;
+  #deck;
+
+  static DECK_SIZE = 5;
+
+  constructor() {
+    this.#storage = window.localStorage;
+    this.#deck = new Deck(GameModel.DECK_SIZE);
+  }
+
+  card(callback) {
+    let card = this.#deck.current();
+
+    callback(card);
+  }
+
+  processAnswer(answer, callback) {
+    let card = this.#deck.current();
+
+    if (answer === card.answer) {
+      this.#stats.answers.correct += 1;
+    } else {
+      this.#stats.answers.wrong += 1;
+    }
+    this.#stats.cards += 1;
+
+    this.#storage.setItem("stats.cards", this.#stats.cards);
+    this.#storage.setItem("stats.answers.correct", this.#stats.answers.correct);
+    this.#storage.setItem("stats.answers.wrong", this.#stats.answers.wrong);
+
+    card = this.#deck.next();
+
+    callback(answer, card);
+  }
+
+
 }
 
 export default GameModel;

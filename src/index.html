@@ -11,11 +11,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <!-- link rel="prefetch" href="game.html" -->
+    <!-- link rel="prefetch" href="score.html" -->
 
     <title>Timis wundervolle tierische Fragen</title>
   </head>
   <body class="d-flex flex-column h-100">
-    <template id="welcome-card-template">
+    <div class="container h-100" id="app">
       <div class="card h-100" id="welcome-card">
         <img src="data/images/kaenguru-01.jpg?as=webp&width=600" class="card-img-top" alt="">
         <div class="card-body">
@@ -26,60 +28,8 @@
           <button class="btn btn-success" id="welcome-card-start-button">START</button>
         </div>
       </div>
-    </template>
+    </div>
 
-    <template id="game-card-template">
-      <div class="card h-100" id="game-card">
-        <img src="data/images/dachs.jpg?as=webp&width=600" class="card-img-top" id="game-card-image" alt="">
-        <!-- audio controls preload="auto" class="w-100" id="game-card-audio">
-          Your browser does not support the <code>audio</code> element.
-        </audio -->
-        <div class="card-body">
-          <h1 class="card-title" id="game-card-title"></h1>
-          <p class="card-text lead" id="game-card-description"></p>
-        </div>
-        <div class="list-group list-group-flush" id="game-card-options">
-        </div>
-        <div class="card-footer d-grid py-3">
-          <button class="btn btn-secondary" id="game-card-next-button">WEITER</button>
-        </div>
-      </div>
-    </template>
-
-    <template id="game-card-option-template">
-      <button class="list-group-item list-group-item-action game-card-option-button py-3" data-answer="A"><span class="badge bg-info game-card-option-label">A</span> <span class="game-card-option-title"></span></button>
-    </template>
-
-    <template id="score-card-template">
-      <div class="card h-100" id="score-card">
-        <img src="data/images/fangschreckenkrebs.jpg?as=webp&width=600" class="card-img-top" alt="">
-        <div class="card-body">
-          <h1 class="card-title display-1 fw-bold" id="score-card-title">Glückwunsch!</h1>
-          <p class="card-text" id="score-card-description"></p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Alle Fragen
-            <span class="badge bg-info" id="score-card-total">0</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Richtige Antworten
-            <span class="badge bg-success" id="score-card-correct">0</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Nochmal versuchen
-            <span class="badge bg-danger" id="score-card-wrong">0</span>
-          </li>
-        </ul>
-        <div class="card-footer d-grid py-3">
-          <button class="btn btn-success" id="score-card-restart-button">WIEDERHOLEN</button>
-        </div>
-      </div>
-    </template>
-
-    <div class="container h-100" id="app"></div>
-
-    <!-- script type="module" src="vendor/lib/bootstrap.bundle.min.js"></script -->
-    <script type="module" src="main.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

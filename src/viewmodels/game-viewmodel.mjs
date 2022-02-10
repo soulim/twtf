@@ -6,31 +6,24 @@ class GameViewModel {
   #card;
   #next;
 
-  constructor() {
-    console.debug("GameViewModel.constructor()");
-  }
+  constructor() {}
 
   set card(value) {
-    console.debug("GameViewModel.setCard()");
-    console.debug(value);
-    
     this.#card = value;
-    this.#viewDelegate.didChangeCard();
+
+    this.#viewDelegate.viewModelDidChangeCard();
   }
 
   get card() {
-    if (this.#card == undefined) {
-      let callback = function (card) {
-        console.debug("GameViewModel.getCard() callback");
-        console.debug(card);
-
-        this.card = card;
-      }.bind(this);
-
-      this.#model.card(callback);
+    if (this.#card != undefined) {
+      return this.#card;
     }
 
-    return this.#card; 
+    let callback = function (card) {
+      this.card = card;
+    }.bind(this);
+
+    this.#model.card(callback);
   }
 
   set model(value) { this.#model = value }
@@ -38,12 +31,7 @@ class GameViewModel {
   set viewDelegate(value) { this.#viewDelegate = value }
 
   processAnswer(data) {
-    console.debug("GameViewModel.processAnswer()");
-
     let callback = function (answer, next) {
-      console.debug("GameViewModel.processAnswer() callback");
-      console.debug(next);
-
       this.#next = next;
       this.#viewDelegate.showAnswer(answer);
     }.bind(this);
@@ -52,13 +40,11 @@ class GameViewModel {
   }
 
   nextCard() {
-    console.debug("GameViewModel.nextCard()");
-
     if (this.#next != undefined) {
       this.card = this.#next;
       this.#next = null;
     } else {
-      this.#coordinatorDelegate.gameViewModelDidFinish();
+      this.#coordinatorDelegate.viewModelDidFinish();
     }
   }
 }

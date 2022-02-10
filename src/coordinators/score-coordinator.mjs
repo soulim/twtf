@@ -1,13 +1,14 @@
-import ScoreViewController from '../controllers/score-viewcontroller.mjs';
-import ScoreViewModel from '../viewmodels/score-viewmodel.mjs';
-import ScoreModel from '../models/score-model.mjs';
+import ScoreViewController from "../controllers/score-viewcontroller.mjs";
+import ScoreViewModel from "../viewmodels/score-viewmodel.mjs";
+import ScoreModel from "../models/score-model.mjs";
 
 class ScoreCoordinator {
-  #delegate
+  #delegate;
   #window;
 
+  static NAME = "ScoreCoordinator";
+
   constructor(window) {
-    console.debug('ScoreCoordinator.constructor()');
     this.#window = window;
   }
 
@@ -26,9 +27,8 @@ class ScoreCoordinator {
     viewController.renderView();
   }
 
-  scoreViewModelDidFinish() {
-    console.debug('ScoreCoordinator.scoreViewModelDidFinish()');
-    this.#delegate.scoreCoordinatorDidFinish();
+  viewModelDidFinish() {
+    this.#delegate.coordinatorDidFinish(this);
   }
 }
 

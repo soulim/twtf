@@ -3,12 +3,12 @@ import GameViewModel from "../viewmodels/game-viewmodel.mjs";
 import GameModel from "../models/game-model.mjs";
 
 class GameCoordinator {
-  #delegate
+  #delegate;
   #window;
 
+  static NAME = "GameCoordinator";
+
   constructor(window) {
-    console.debug("GameCoordinator.constructor()");
-    
     this.#window = window;
   }
 
@@ -27,10 +27,8 @@ class GameCoordinator {
     viewController.renderView();
   }
 
-  gameViewModelDidFinish() {
-    console.debug("GameCoordinator.gameViewModelDidFinish()");
-
-    this.#delegate.gameCoordinatorDidFinish();
+  viewModelDidFinish() {
+    this.#delegate.coordinatorDidFinish(this);
   }
 }
 

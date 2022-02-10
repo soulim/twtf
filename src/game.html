@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="h-100" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="vendor/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <!-- link rel="next" href="score.html" -->
+
+    <title>Timis wundervolle tierische Fragen</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <template id="game-card-option-template">
+      <button class="list-group-item list-group-item-action game-card-option-button py-3" data-answer="A"><span class="badge bg-info game-card-option-label">A</span> <span class="game-card-option-title"></span></button>
+    </template>
+
+    <div class="container h-100" id="app">
+      <div class="card h-100" id="game-card">
+        <img src="data/images/dachs.jpg?as=webp&width=600" class="card-img-top" id="game-card-image" alt="">
+        <!-- audio controls preload="auto" class="w-100" id="game-card-audio">
+          Your browser does not support the <code>audio</code> element.
+        </audio -->
+        <div class="card-body">
+          <h1 class="card-title" id="game-card-title"></h1>
+          <p class="card-text lead" id="game-card-description"></p>
+        </div>
+        <div class="list-group list-group-flush" id="game-card-options">
+        </div>
+        <div class="card-footer d-grid py-3">
+          <button class="btn btn-secondary" id="game-card-next-button">WEITER</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="game.js"></script>
+  </body>
+</html>

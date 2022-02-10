@@ -1,13 +1,14 @@
-import WelcomeViewController from '../controllers/welcome-viewcontroller.mjs';
-import WelcomeViewModel from '../viewmodels/welcome-viewmodel.mjs';
-import WelcomeModel from '../models/welcome-model.mjs';
+import WelcomeViewController from "../controllers/welcome-viewcontroller.mjs";
+import WelcomeViewModel from "../viewmodels/welcome-viewmodel.mjs";
+import WelcomeModel from "../models/welcome-model.mjs";
 
 class WelcomeCoordinator {
-  #delegate
+  #delegate;
   #window;
 
+  static NAME = "WelcomeCoordinator";
+
   constructor(window) {
-    console.debug('WelcomeCoordinator.constructor()');
     this.#window = window;
   }
 
@@ -22,11 +23,12 @@ class WelcomeCoordinator {
     viewModel.model = new WelcomeModel();
     viewModel.coordinatorDelegate = this;
     viewModel.viewDelegate = viewController;
+
+    viewController.renderView();
   }
 
-  welcomeViewModelDidStartGame() {
-    console.debug('WelcomeCoordinator.welcomeViewModelDidStartGame()');
-    this.#delegate.welcomeCoordinatorDidFinish();
+  viewModelDidFinish() {
+    this.#delegate.coordinatorDidFinish(this);
   }
 }
 

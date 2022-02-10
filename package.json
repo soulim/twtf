@@ -1,6 +1,6 @@
 {
-  "name": "tierduel",
-  "source": "src/index.html",
+  "name": "twtf",
+  "source": ["src/index.html", "src/game.html", "src/score.html"],
   "scripts": {
     "start": "parcel",
     "build": "parcel build --detailed-report"

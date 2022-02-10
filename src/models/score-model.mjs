@@ -2,14 +2,10 @@ class ScoreModel {
   #storage;
 
   constructor() {
-    console.debug("ScoreModel.constructor()");
-    
     this.#storage = window.localStorage;
   }
 
   score(callback) {
-    console.debug("ScoreModel.getScore()");
-    
     let score = {
       cards: this.#storage.getItem("stats.cards"),
       answers: {
@@ -20,10 +16,8 @@ class ScoreModel {
 
     callback(score);
   }
-  
-  restartGame(callback) {
-    console.debug("ScoreModel.restartGame()");
 
+  restartGame(callback) {
     callback();
   }
 }
