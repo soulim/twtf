@@ -325,6 +325,31 @@ const level = {
         }
       ],
       "answer": "B"
+    },
+    {
+      "id": "card-13",
+      "title": "",
+      "description": "Welcher Vogel unternimmt die länste Wanderung?",
+      "image": {
+        "cloaked": true,
+        "url": new URL("../data/images/kuestenseenschwalbe.jpg?as=webp", import.meta.url),
+        "source": "https://www.fotocommunity.com"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Rosaflamingo"
+        },
+        {
+          "id": "B",
+          "title": "Küstenseenschwalbe"
+        },
+        {
+          "id": "C",
+          "title": "Weißstorch"
+        }
+      ],
+      "answer": "B"
     }
   ]
 };
