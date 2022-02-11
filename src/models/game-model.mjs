@@ -9,6 +9,7 @@ const level = {
       "title": "Fetzenfish",
       "description": "Zu welcher Familie zählen die Fetzenfishe und die Seepferdchen?",
       "image": {
+        "cloaked": false,
         "url": new URL("../data/images/fetzenfish.jpg?as=webp&width=600", import.meta.url)
       },
       "audio": {
@@ -35,6 +36,7 @@ const level = {
       "title": "Küstenseeschwalbe",
       "description": "Wo brütet seine Eier die Küstenseeschwalbe?",
       "image": {
+        "cloaked": false,
         "url": new URL("../data/images/kuestenseenschwalbe.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
       },
@@ -62,6 +64,7 @@ const level = {
       "title": "Rosaflamingo",
       "description": "Was fressen Rosaflamingos am liebsten?",
       "image": {
+        "cloaked": false,
         "url": new URL("../data/images/rosaflamingo.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
       },
@@ -89,6 +92,7 @@ const level = {
       "title": "Haubentaucher",
       "description": "Wofür ist der Haubentaucher bekannt?",
       "image": {
+        "cloaked": false,
         "url": new URL("../data/images/haubentaucher.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
       },
@@ -116,6 +120,7 @@ const level = {
       "title": "Fetzenfish",
       "description": "Wie zeigt das Fetzenfish-Männchen, das es zum Ausbrüten der Eier bereit ist?",
       "image": {
+        "cloaked": false,
         "url": new URL("../data/images/fetzenfish.jpg?as=webp&width=600", import.meta.url)
       },
       "audio": {
@@ -142,6 +147,7 @@ const level = {
       "title": "Prachtfregattvogel",
       "description": "Wann bläst ein Prachtfregattvogel-Männchen seinen roten Kehlsack auf?",
       "image": {
+        "cloaked": false,
         "url": new URL("../data/images/prachtfregattvogel.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
       },
@@ -169,6 +175,7 @@ const level = {
       "title": "Blattschwanzgecko",
       "description": "Wo findet man Blattschwanzgeckos?",
       "image": {
+        "cloaked": false,
         "url": new URL("../data/images/blattschwanzgecko.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.fotocommunity.com"
       },
@@ -196,6 +203,7 @@ const level = {
       "title": "Diamantschildkröte",
       "description": "Wieso heißt die Diamantschildkröte \"Diamantschildkröte\"?",
       "image": {
+        "cloaked": false,
         "url": new URL("../data/images/diamantschildkroete.jpg?as=webp&width=600", import.meta.url),
         "source": "http://www.dght-dresden.de"
       },
@@ -218,6 +226,7 @@ const level = {
       "title": "Faueltier",
       "description": "Warum hat das Faultier so lange Kralen?",
       "image": {
+        "cloaked": false,
         "url": new URL("../data/images/faultier.jpg?as=webp&width=600", import.meta.url),
         "source": "https://youtube.com"
       },
@@ -245,6 +254,7 @@ const level = {
       "title": "Faueltier",
       "description": "Warum ist das Faultier so langsam?",
       "image": {
+        "cloaked": false,
         "url": new URL("../data/images/faultier.jpg?as=webp&width=600", import.meta.url),
         "source": "https://youtube.com"
       },
@@ -272,6 +282,7 @@ const level = {
       "title": "Känguru",
       "description": "Haben auch die männlichen Kängurus einen Beutel?",
       "image": {
+        "cloaked": false,
         "url": new URL("../data/images/kaenguru-02.jpg?as=webp&width=600", import.meta.url),
         "source": "https://www.wunschliste.de"
       },

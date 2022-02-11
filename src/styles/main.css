@@ -10,3 +10,6 @@
 .card-footer {
   background-color: #eae2cf;
 }
+.card-image-cloaked {
+  filter: blur(1rem);
+}

@@ -17,7 +17,10 @@ class GameViewController {
   }
 
   showAnswer(answer) {
+    let image = this.#cardElement.querySelector("#game-card-image");
     let buttons = this.#cardElement.querySelectorAll("#game-card-options .game-card-option-button");
+
+    image.classList.remove("card-image-cloaked");
 
     buttons.forEach(function (button) {
       if (button.dataset.answer === this.#viewModel.card.answer) {
@@ -48,7 +51,11 @@ class GameViewController {
       return;
     }
 
-    this.#displayImage(card.image.url);
+    if (card.image.cloaked) {
+      this.#displayCloakedImage(card.image.url);
+    } else {
+      this.#displayImage(card.image.url);
+    }
     // this.#displayAudio(card.audio.url);
     this.#displayTitle(card.title);
     this.#displayDesciption(card.description);
@@ -59,6 +66,13 @@ class GameViewController {
   #displayImage(url) {
     let image = this.#cardElement.querySelector("#game-card-image");
 
+    image.src = url;
+  }
+
+  #displayCloakedImage(url) {
+    let image = this.#cardElement.querySelector("#game-card-image");
+
+    image.classList.add("card-image-cloaked");
     image.src = url;
   }
 
