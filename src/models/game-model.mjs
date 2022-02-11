@@ -304,6 +304,27 @@ const level = {
         }
       ],
       "answer": "B"
+    },
+    {
+      "id": "card-12",
+      "title": "Chamäleon",
+      "description": "Kann ein Chamäleon sich auf jedem Untergrund tarnen?",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/chamaeleon.jpg?as=webp", import.meta.url),
+        "source": "https://www.fotocommunity.de/photo/dreihorn-chamaeleon-trioceros-jacksonii-big--dmfoto/42768683"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Ja"
+        },
+        {
+          "id": "B",
+          "title": "Nein"
+        }
+      ],
+      "answer": "B"
     }
   ]
 };
