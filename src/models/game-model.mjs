@@ -223,7 +223,7 @@ const level = {
     },
     {
       "id": "card-9",
-      "title": "Faueltier",
+      "title": "Faultier",
       "description": "Warum hat das Faultier so lange Kralen?",
       "image": {
         "cloaked": false,
@@ -251,7 +251,7 @@ const level = {
     },
     {
       "id": "card-10",
-      "title": "Faueltier",
+      "title": "Faultier",
       "description": "Warum ist das Faultier so langsam?",
       "image": {
         "cloaked": false,
@@ -347,6 +347,77 @@ const level = {
         {
           "id": "C",
           "title": "Weißstorch"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "card-14",
+      "title": "Plumplori",
+      "description": "Wie schützen Plumplori-Mütter seine Jungen?",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/plumplori.jpg?as=webp", import.meta.url),
+        "source": "https://www.spiegel.de"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Sie lecken die Jungen mit giftigen Spucke ab."
+        },
+        {
+          "id": "B",
+          "title": "Sie machen große Augen, um Fressfeinde zu erschrecken."
+        },
+        {
+          "id": "C",
+          "title": "Sie laufen schnell weg."
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "card-15",
+      "title": "",
+      "description": "Welche Primatenart ist giftig?",
+      "image": {
+        "cloaked": true,
+        "url": new URL("../data/images/plumplori.jpg?as=webp", import.meta.url),
+        "source": "https://www.spiegel.de"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Katta"
+        },
+        {
+          "id": "B",
+          "title": "Totenkopfäffchen"
+        },
+        {
+          "id": "C",
+          "title": "Plumplori"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "card-16",
+      "title": "Faultier",
+      "description": "Können Faultiere schwimmen?",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/faultier.jpg?as=webp", import.meta.url),
+        "source": "https://www.spiegel.de"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Nein"
+        },
+        {
+          "id": "B",
+          "title": "Ja"
         }
       ],
       "answer": "B"
