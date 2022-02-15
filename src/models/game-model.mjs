@@ -433,12 +433,22 @@ class Deck {
 
   constructor(size) {
     this.#size = size;
-    this.#cards = this.#shuffle(level.cards.slice())
-                      .slice(0, size);
+
+    let start = this.#randomBetween(0, (level.cards.length - size));
+    let end = start + size;
+    let cards = [];
+
+    for (let i = start; i < end; i++) {
+      cards.push(i);
+    }
+
+    this.#cards = this.#shuffle(cards);
   }
 
   current() {
-    return this.#cards[this.#index];
+    let index = this.#cards[this.#index];
+
+    return level.cards[index];
   }
 
   next() {
@@ -448,7 +458,9 @@ class Deck {
 
     this.#index += 1;
 
-    return this.#cards[this.#index];
+    let index = this.#cards[this.#index];
+
+    return level.cards[index];
   }
 
   // See https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
@@ -461,6 +473,14 @@ class Deck {
     return cards;
   }
 
+  // Get a random integer between two values, inclusive.
+  // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#getting_a_random_integer_between_two_values
+  #randomBetween(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
 }
 
 class GameModel {
