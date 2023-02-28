@@ -1,9 +1,13 @@
 # Timis wundervolle tierische Fragen
 
-"Timis wundervolle tierische Fragen" is a quiz game created together with my
+*"Timis wundervolle tierische Fragen"* is a quiz game created together with my
 son Tim. You get the best experience by playing the game on a mobile device.
 
-Play online: <https://twtf.netlify.app/>.
+The project was created for learning purposes.
+
+## Images
+
+Rights on all images belong to their authors.
 
 ## License
 
