@@ -3,9 +3,9 @@
 "Timis wundervolle tierische Fragen" is a quiz game created together with my
 son Tim. You get the best experience by playing the game on a mobile device.
 
-![docs/screenshots/Screenshot_2023-02-28-17-01-04-59_40deb401b9ffe8e1df2f1cc5ba480b12.jpg][Welcome screen]
-![docs/screenshots/Screenshot_2023-02-28-17-01-27-02_40deb401b9ffe8e1df2f1cc5ba480b12][Game screen]
-![docs/screenshots/Screenshot_2023-02-28-17-01-38-50_40deb401b9ffe8e1df2f1cc5ba480b12][Score screen]
+![Welcome screen](docs/screenshots/Screenshot_2023-02-28-17-01-04-59_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
+![Game screen](docs/screenshots/Screenshot_2023-02-28-17-01-27-02_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
+![Score screen](docs/screenshots/Screenshot_2023-02-28-17-01-38-50_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
 
 Play online: <https://twtf.netlify.app/>.
 
