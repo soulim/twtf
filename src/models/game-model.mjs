@@ -6,11 +6,12 @@ const level = {
   "cards": [
     {
       "id": "card-1",
-      "title": "Fetzenfish",
-      "description": "Zu welcher Familie zählen die Fetzenfishe und die Seepferdchen?",
+      "title": "Fetzenfisch",
+      "description": "Zu welcher Familie zählen die Fetzenfische und die Seepferdchen?",
       "image": {
         "cloaked": false,
-        "url": new URL("../data/images/fetzenfish.jpg?as=webp&width=600", import.meta.url)
+        "url": new URL("../data/images/fetzenfisch.jpg?as=webp&width=600", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Leafy_Seadragon_Phycodurus_eques_2500px_PLW_edit.jpg"
       },
       "audio": {
         "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
@@ -38,7 +39,7 @@ const level = {
       "image": {
         "cloaked": false,
         "url": new URL("../data/images/kuestenseenschwalbe.jpg?as=webp&width=600", import.meta.url),
-        "source": "https://www.fotocommunity.com"
+        "source": "https://commons.wikimedia.org/wiki/File:An_arctic_tern_(Sterna_paradisaea)_begrudges_the_other_its_prey.jpg"
       },
       "audio": {
         "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
@@ -66,7 +67,7 @@ const level = {
       "image": {
         "cloaked": false,
         "url": new URL("../data/images/rosaflamingo.jpg?as=webp&width=600", import.meta.url),
-        "source": "https://www.fotocommunity.com"
+        "source": "https://commons.wikimedia.org/wiki/File:Rosaflamingo_(Phoenicopterus_roseus)_Zoo_Salzburg_2014_c.jpg"
       },
       "audio": {
         "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
@@ -94,7 +95,7 @@ const level = {
       "image": {
         "cloaked": false,
         "url": new URL("../data/images/haubentaucher.jpg?as=webp&width=600", import.meta.url),
-        "source": "https://www.fotocommunity.com"
+        "source": "https://commons.wikimedia.org/wiki/File:Great_Crested_Grebe_(Podiceps_cristatus)_(14).JPG"
       },
       "audio": {
         "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
@@ -117,11 +118,12 @@ const level = {
     },
     {
       "id": "card-5",
-      "title": "Fetzenfish",
-      "description": "Wie zeigt das Fetzenfish-Männchen, das es zum Ausbrüten der Eier bereit ist?",
+      "title": "Fetzenfisch",
+      "description": "Wie zeigt das Fetzenfisch-Männchen, das es zum Ausbrüten der Eier bereit ist?",
       "image": {
         "cloaked": false,
-        "url": new URL("../data/images/fetzenfish.jpg?as=webp&width=600", import.meta.url)
+        "url": new URL("../data/images/fetzenfisch.jpg?as=webp&width=600", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Leafy_Seadragon_Phycodurus_eques_2500px_PLW_edit.jpg"
       },
       "audio": {
         "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
@@ -149,7 +151,7 @@ const level = {
       "image": {
         "cloaked": false,
         "url": new URL("../data/images/prachtfregattvogel.jpg?as=webp&width=600", import.meta.url),
-        "source": "https://www.fotocommunity.com"
+        "source": "https://commons.wikimedia.org/wiki/File:Fregata_magnificens_-Galapagos,_Ecuador_-male-8.jpg"
       },
       "audio": {
         "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
@@ -177,7 +179,7 @@ const level = {
       "image": {
         "cloaked": false,
         "url": new URL("../data/images/blattschwanzgecko.jpg?as=webp&width=600", import.meta.url),
-        "source": "https://www.fotocommunity.com"
+        "source": "https://commons.wikimedia.org/wiki/File:Mossy_leaf-tailed_gecko_(Uroplatus_sikorae),_Vohimana_reserve,_Madagascar.jpg"
       },
       "audio": {
         "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
@@ -205,7 +207,7 @@ const level = {
       "image": {
         "cloaked": false,
         "url": new URL("../data/images/diamantschildkroete.jpg?as=webp&width=600", import.meta.url),
-        "source": "http://www.dght-dresden.de"
+        "source": "https://commons.wikimedia.org/wiki/File:Diamond_terrapin_turtle_reptile_malaclemys_terrapin.jpg"
       },
       "audio": {
         "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
@@ -228,7 +230,7 @@ const level = {
       "image": {
         "cloaked": false,
         "url": new URL("../data/images/faultier.jpg?as=webp&width=600", import.meta.url),
-        "source": "https://youtube.com"
+        "source": "https://commons.wikimedia.org/wiki/File:Bradypus_variegatus_Costa_Rica_01.jpg"
       },
       "audio": {
         "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
@@ -256,7 +258,7 @@ const level = {
       "image": {
         "cloaked": false,
         "url": new URL("../data/images/faultier.jpg?as=webp&width=600", import.meta.url),
-        "source": "https://youtube.com"
+        "source": "https://commons.wikimedia.org/wiki/File:Bradypus_variegatus_Costa_Rica_01.jpg"
       },
       "audio": {
         "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
@@ -284,7 +286,7 @@ const level = {
       "image": {
         "cloaked": false,
         "url": new URL("../data/images/kaenguru-02.jpg?as=webp&width=600", import.meta.url),
-        "source": "https://www.wunschliste.de"
+        "source": "https://commons.wikimedia.org/wiki/File:These_kangaroo_family_is_grazing_a_field_nearby_our_golf_club.jpg"
       },
       "audio": {
         "url": new URL("../data/audio/blatschwanzgecko.mp3", import.meta.url)
@@ -312,7 +314,7 @@ const level = {
       "image": {
         "cloaked": false,
         "url": new URL("../data/images/chamaeleon.jpg?as=webp", import.meta.url),
-        "source": "https://www.fotocommunity.de/photo/dreihorn-chamaeleon-trioceros-jacksonii-big--dmfoto/42768683"
+        "source": "https://commons.wikimedia.org/wiki/File:Chamaeleo_chamaeleon_chamaeleon_195375941.jpg"
       },
       "options": [
         {
@@ -333,7 +335,7 @@ const level = {
       "image": {
         "cloaked": true,
         "url": new URL("../data/images/kuestenseenschwalbe.jpg?as=webp", import.meta.url),
-        "source": "https://www.fotocommunity.com"
+        "source": "https://commons.wikimedia.org/wiki/File:An_arctic_tern_(Sterna_paradisaea)_begrudges_the_other_its_prey.jpg"
       },
       "options": [
         {
@@ -358,7 +360,7 @@ const level = {
       "image": {
         "cloaked": false,
         "url": new URL("../data/images/plumplori.jpg?as=webp", import.meta.url),
-        "source": "https://www.spiegel.de"
+        "source": "https://commons.wikimedia.org/wiki/File:Nycticebus_coucang_84653116.jpg"
       },
       "options": [
         {
@@ -383,7 +385,7 @@ const level = {
       "image": {
         "cloaked": true,
         "url": new URL("../data/images/plumplori.jpg?as=webp", import.meta.url),
-        "source": "https://www.spiegel.de"
+        "source": "https://commons.wikimedia.org/wiki/File:Nycticebus_coucang_84653116.jpg"
       },
       "options": [
         {
@@ -408,7 +410,7 @@ const level = {
       "image": {
         "cloaked": false,
         "url": new URL("../data/images/faultier.jpg?as=webp", import.meta.url),
-        "source": "https://www.spiegel.de"
+        "source": "https://commons.wikimedia.org/wiki/File:Bradypus_variegatus_Costa_Rica_01.jpg"
       },
       "options": [
         {
