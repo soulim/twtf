@@ -88,7 +88,7 @@ const level = {
       ],
       "answer": "B"
     },
-        {
+    {
       "id": "card-4",
       "title": "Haubentaucher",
       "description": "Wofür ist der Haubentaucher bekannt?",
@@ -220,7 +220,7 @@ const level = {
         {
           "id": "B",
           "title": "Weil sie ein Diamanten-Muster auf ihrer Haut hat"
-        }      ],
+        }],
       "answer": "B"
     },
     {
@@ -423,6 +423,123 @@ const level = {
         }
       ],
       "answer": "B"
+    },
+    {
+      "id": "card-17",
+      "title": "Okapi",
+      "description": "Aus welchen Tieren besteht der Okapi?",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/okapi.jpg?as=webp", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Okapi_(Okapia_johnstoni)_2009-04-04_02.jpg"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Aus Zebra, Giraffe und Pferd"
+        },
+        {
+          "id": "B",
+          "title": "Aus Känguru, Faultier und Koala"
+        },
+        {
+          "id": "C",
+          "title": "Aus Zebra, Giraffe und Pony"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "card-18",
+      "title": "Schnabeltier",
+      "description": "Wie lange kann ein Schnabeltier unter Wasser bleiben?",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/schnabeltier.jpg?as=webp", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale_2.jpg"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Rund fünf Minuten"
+        },
+        {
+          "id": "B",
+          "title": "Rund zehn Minuten"
+        },
+        {
+          "id": "C",
+          "title": "Rund zwei Minuten"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "card-19",
+      "title": "Helmkasuar",
+      "description": "Wozu ist der Helm auf dem Kopf vom Helmkasuar?",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/helmkasuar.jpg?as=webp", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Casuarius_casuarius_(6547866597).jpg"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Zur Orientierung"
+        },
+        {
+          "id": "B",
+          "title": "Die Forscher wissen es noch nicht"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "card-20",
+      "title": "Nasenbär",
+      "description": "Warum haben Nasenbären so einen langen Schwanz?",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/nasenbaer.jpg?as=webp", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Nasenbaer_Nasua_nasua_Zoo_Augsburg-16.jpg"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Zur Futtersuche"
+        },
+        {
+          "id": "B",
+          "title": "Zum Kämpfen"
+        },
+        {
+          "id": "C",
+          "title": "Zur Balance auf einem Ast"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "card-21",
+      "title": "Nasenbär",
+      "description": "Haben Nasenbären Zähne?",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/nasenbaer.jpg?as=webp", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Nasenbaer_Nasua_nasua_Zoo_Augsburg-16.jpg"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Ja"
+        },
+        {
+          "id": "B",
+          "title": "Nein"
+        }
+      ],
+      "answer": "A"
     }
   ]
 };
@@ -468,8 +585,8 @@ class Deck {
   // See https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
   #shuffle(cards) {
     for (let i = cards.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [cards[i], cards[j]] = [cards[j], cards[i]];
+      const j = Math.floor(Math.random() * (i + 1));
+      [cards[i], cards[j]] = [cards[j], cards[i]];
     }
 
     return cards;

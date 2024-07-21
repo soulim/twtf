@@ -1,14 +1,18 @@
 {
   "name": "twtf",
-  "source": ["src/index.html", "src/game.html", "src/score.html"],
+  "source": [
+    "src/index.html",
+    "src/game.html",
+    "src/score.html"
+  ],
   "scripts": {
     "start": "parcel",
     "build": "parcel build --detailed-report"
   },
   "devDependencies": {
-    "@parcel/packager-raw-url": "^2.2.1",
-    "@parcel/transformer-webmanifest": "^2.2.1",
-    "parcel": "^2.2.1",
-    "sharp": "^0.29.3"
+    "@parcel/packager-raw-url": "^2.12.0",
+    "@parcel/transformer-webmanifest": "^2.12.0",
+    "parcel": "^2.12.0",
+    "sharp": "^0.31.1"
   }
 }
