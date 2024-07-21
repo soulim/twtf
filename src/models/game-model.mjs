@@ -501,7 +501,7 @@ const level = {
       "description": "Warum haben Nasenbären so einen langen Schwanz?",
       "image": {
         "cloaked": false,
-        "url": new URL("../data/images/nasenbaer.jpg?as=webp", import.meta.url),
+        "url": new URL("../data/images/nasenbaer-01.jpg?as=webp", import.meta.url),
         "source": "https://commons.wikimedia.org/wiki/File:Nasenbaer_Nasua_nasua_Zoo_Augsburg-16.jpg"
       },
       "options": [
@@ -526,8 +526,8 @@ const level = {
       "description": "Haben Nasenbären Zähne?",
       "image": {
         "cloaked": false,
-        "url": new URL("../data/images/nasenbaer.jpg?as=webp", import.meta.url),
-        "source": "https://commons.wikimedia.org/wiki/File:Nasenbaer_Nasua_nasua_Zoo_Augsburg-16.jpg"
+        "url": new URL("../data/images/nasenbaer-01.jpg?as=webp", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Nasua_nasua_qtl4.jpg"
       },
       "options": [
         {
@@ -537,6 +537,173 @@ const level = {
         {
           "id": "B",
           "title": "Nein"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "card-22",
+      "title": "Brüllaffe",
+      "description": "Auf wieviele Kilometer kann man Brüllaffen beim Brüllen hören? ",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/bruellaffe.jpg?as=webp", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Walking_Alouatta_palliata,_Costa_Rica.JPG"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Auf eine Entfernung von 4,8 km sind sie deutlich zu hören"
+        },
+        {
+          "id": "B",
+          "title": "Auf eine Entfernung von 5,8 km sind sie deutlich zu hören"
+        },
+        {
+          "id": "C",
+          "title": "Auf eine Entfernung von 2,3 km sind sie deutlich zu hören"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "card-23",
+      "title": "Feuersalamander",
+      "description": "Warum heißt der Feuersalamander \"Feuersalamander\"?",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/feuersalamander.jpg?as=webp", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Feuersalamander_(Salamander_salamandra),_Rocherath,_Ostbelgien_(51619493799).jpg"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Weil der Aberglaube des Menschen sagt, dass das giftige Sekret des Salamanders Brände löschen kann"
+        },
+        {
+          "id": "B",
+          "title": "Weil er gelbe Flecken auf dem Körper hat, und es so aussieht, als wäre es Feuer"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "card-24",
+      "title": "Schnabeligel",
+      "description": "Wo leben Schnabeligel?",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/schnabeligel-01.jpg?as=webp", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Tachyglossus_aculeatus_side_on.jpg"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Afrika"
+        },
+        {
+          "id": "B",
+          "title": "Australien"
+        },
+        {
+          "id": "C",
+          "title": "Süd-Amerika"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "card-25",
+      "title": "Amsel",
+      "description": "Von wem können Amseln Geräusche nachmachen?",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/amsel.jpg?as=webp", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Turdus_merula_1308.jpg"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Nur von Vögeln"
+        },
+        {
+          "id": "B",
+          "title": "Von allem"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "card-26",
+      "title": "Koala",
+      "description": "Nach was riech Koala Kacke?",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/koala.jpg?as=webp", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Nach Koala Kacke eben"
+        },
+        {
+          "id": "B",
+          "title": "Nach Baumrinde"
+        },
+        {
+          "id": "C",
+          "title": "Nach Eukalyptus"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "card-27",
+      "title": "Eintagsfliege",
+      "description": "Wie lange Leben die Larven der Eintagsfliege?",
+      "image": {
+        "cloaked": false,
+        "url": new URL("../data/images/eintagsfliege.jpg?as=webp", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:MayFly-Palaeoptera-Order-Ephemeroptera.jpg"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Ein Jahr, oft aber zwei oder gar drei Jahre"
+        },
+        {
+          "id": "B",
+          "title": "Sechs Wochen bis ein Jahr"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "card-28",
+      "title": "",
+      "description": "Wie nennt man Rüsselbären noch?",
+      "image": {
+        "cloaked": true,
+        "url": new URL("../data/images/nasenbaer-02.jpg?as=webp", import.meta.url),
+        "source": "https://commons.wikimedia.org/wiki/File:Nasua_nasua_qtl4.jpg"
+      },
+      "options": [
+        {
+          "id": "A",
+          "title": "Nasenbär"
+        },
+        {
+          "id": "B",
+          "title": "Ameisenbär"
+        },
+        {
+          "id": "C",
+          "title": "Tapier"
+        },
+        {
+          "id": "D",
+          "title": "Elefantenbär"
         }
       ],
       "answer": "A"
